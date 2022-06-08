@@ -27,3 +27,4 @@
 # Ignore these
 /.config/gh/hosts.yml
 /.config/fish/fish_variables
+/.local/state/bash/history
