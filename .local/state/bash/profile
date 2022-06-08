@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+[[ -f $XDG_STATE_HOME/bash/bash.bashrc ]] && . $XDG_STATE_HOME/bash/bash.bashrc
+
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_STATE_HOME="$HOME/.local/state"
+export PATH="$HOME/.cargo/bin:$PATH"
+export HISTFILE="$XDG_STATE_HOME/bash/history"

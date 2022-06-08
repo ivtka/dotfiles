@@ -1,0 +1,25 @@
+# Ignore everything
+/*
+/.*
+
+# Unlock .local/state but ignore all of its contents
+!/.local
+/.local/*
+!/.local/state
+/.local/state/*
+
+
+# except for this
+!/.local/state/bash
+
+# Unlock .config but ignore all of its contents
+!/.config
+/.config/*
+
+# except for these
+!/.config/{git,gh,helix,bat,alacritty}
+!/.gitignore
+
+# Ignore these
+/.config/gh/hosts.yml
+/.config/fish/fish_variables

@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+
+alias v='neovim'
+alias g='git'
+
+if [[ $XDG_SESSION_TYPE == "wayland" ]]; then
+  alias c='wl-copy'
+  alias p='wl-paste'
+elif [[ $XDG_SESSION_TYPE = "x11" ]]; then
+  alias c='xclip -selection clipboard'
+  alias p='xclip -o'
+fi
+
+if [ -x "$(command -v helix)" ]; then
+  alias hx='helix'
+else
+  alias hx='hx'
+fi
+
+# ls
+[[ -x "$(command -v exa)" ]] && alias ls='exa --icons --color-scale'
+alias ll='ls -lah'
+alias la='ls -la'
+
+# package manager
+if grep -iq arch /etc/os-release; then
+  alias pacman='sudo pacman'
+  alias pac='pacman'
+
+  if [ -x "$(command -v paru)" ]; then
+    alias install='paru -S --needed --removemake'
+    alias show='paru -Si'
+    alias search='paru -Ss'
+    alias remove='paru -Rs'
+    alias fsearch='paru -F'
+  fi
+  
+  [[ -x "$(command -v topgrade)" ]] && alias upgrade='topgrade'
+fi
+
+
+alias mkdir='mkdir -p'
+alias rmdir='rmdir * 2 > /dev/null'
+
+alias path='echo $PATH | tr ":" "\n"'
