@@ -17,7 +17,11 @@
 /.config/*
 
 # except for these
-!/.config/{git,gh,helix,bat,alacritty}
+!/.config/bat
+!/.config/fish
+!/.config/gh
+!/.config/git
+!/.config/helix
 !/.gitignore
 
 # Ignore these
