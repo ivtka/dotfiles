@@ -1,0 +1,10 @@
+[[language]]
+name = "typescript"
+language-server = { command = "deno", args = ["lsp"] }
+roots = ["deno.json"]
+config = { enable = true, lint = true, unstable = true }
+
+[[language]]
+name = "git-commit"
+rulers = [50, 72]
+max-line-length = 72
