@@ -6,11 +6,8 @@
 [[ $- != *i* ]] && return
 
 # Pull in bash alias/functions definitions
-[[ -f $XDG_STATE_HOME/bash/aliases ]] && . $XDG_STATE_HOME/bash/aliases
 [[ -f $XDG_STATE_HOME/bash/functions ]] && . $XDG_STATE_HOME/bash/functions
-[[ -f $XDG_CONFIG_HOME/git/aliases ]] && . $XDG_CONFIG_HOME/git/aliases
-[[ -f $XDG_CONFIG_HOME/git/functions ]] && . $XDG_CONFIG_HOME/git/functions
-
+[[ -f $XDG_STATE_HOME/bash/aliases ]] && . $XDG_STATE_HOME/bash/aliases
 
 # Helper utilities
 [[ -f /usr/share/fzf/key-bindings.bash ]] && source /usr/share/fzf/key-bindings.bash
