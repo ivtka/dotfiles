@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+test exa && alias ls='exa --icons --color-scale'
+alias ll='ls -lah'
+alias la='ls -a'
+
+if test exa; then
+  alias gls='ll --git'
+  alias llz='ll --sort=size'
+  alias lla='ll --sort=acc'
+  alias llc='ll --sort=cr'
+fi

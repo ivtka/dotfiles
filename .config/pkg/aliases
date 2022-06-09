@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+if grep -iq arch /etc/os-release; then
+  alias pacman='sudo pacman'
+  alias pac='pacman'
+
+  if test paru; then
+    alias install="paru -S --needed --removemake"
+    alias show="paru -Si"
+    alias search="paru -Ss"
+    alias remove="paru -Rs"
+    alias fsearch="paru -F"
+  else
+    alias install="pacman -S --needed --removemake"
+    alias show="pacman -Si"
+    alias search="pacman -Ss"
+    alias remove="pacman -Ss"
+    alias fsearch="pacman -F"
+  fi
+fi

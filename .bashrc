@@ -13,4 +13,4 @@
 [[ -f /usr/share/fzf/key-bindings.bash ]] && . /usr/share/fzf/key-bindings.bash
 
 # Prompt
-PS1='(\u \[\e[31m\]ꑭ\[\e[39m\] \w) '
+PS1='\[\e[34m\]\w\[\e[39m\] \[\e[33m\]ꑭ\[\e[39m\] '
