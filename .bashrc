@@ -8,6 +8,7 @@
 # Pull in bash alias/functions definitions
 [[ -f $HOME/.bash_functions ]] && . $HOME/.bash_functions
 [[ -f $HOME/.bash_aliases ]] && . $HOME/.bash_aliases
+[[ -f $HOME/.bash_completions ]] && . $HOME/.bash_completions
 
 # Helper utilities
 [[ -f /usr/share/fzf/key-bindings.bash ]] && . /usr/share/fzf/key-bindings.bash
