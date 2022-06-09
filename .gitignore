@@ -2,15 +2,9 @@
 /*
 /.*
 
-# Unlock .local/state but ignore all of its contents
-!/.local
-/.local/*
-!/.local/state
-/.local/state/*
-
-
-# except for this
-!/.local/state/bash
+# unlock these
+!/.gitignore
+!/.bashrc
 
 # Unlock .config but ignore all of its contents
 !/.config
@@ -22,9 +16,8 @@
 !/.config/gh
 !/.config/git
 !/.config/helix
-!/.gitignore
+
 
 # Ignore these
 /.config/gh/hosts.yml
 /.config/fish/fish_variables
-/.local/state/bash/history

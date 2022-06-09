@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-[[ -f $XDG_CONFIG_HOME/git/aliases ]] && . $XDG_CONFIG_HOME/git/aliases
