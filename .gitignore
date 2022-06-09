@@ -5,6 +5,8 @@
 # unlock these
 !/.gitignore
 !/.bashrc
+!/.bash_aliases
+!/.bash_functions
 
 # Unlock .config but ignore all of its contents
 !/.config
@@ -16,6 +18,9 @@
 !/.config/gh
 !/.config/git
 !/.config/helix
+!/.config/exa
+!/.config/pkg
+!/.config/starship.toml
 
 
 # Ignore these
