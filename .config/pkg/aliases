@@ -2,7 +2,6 @@
 
 if grep -iq arch /etc/os-release; then
   alias pacman='sudo pacman'
-  alias pac='pacman'
   alias pacsyu='pacman -Syyu'
   
   if test paru; then
@@ -12,6 +11,8 @@ if grep -iq arch /etc/os-release; then
     alias remove="paru -Rs"
     alias fsearch="paru -F"
   else
+    alias pacget="pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S"
+    alias pacrm="pacman -Qq | fzf --multi --preview 'pacman -Qi {1}' | xargs -ro sudo pacman -Rns"
     alias install="pacman -S --needed --removemake"
     alias show="pacman -Si"
     alias search="pacman -Ss"

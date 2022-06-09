@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+test helix && alias hx="helix"
+
+alias hxo='hx $(rg --files | sk -m --preview="bat {} --color=always")'
