@@ -1,42 +1,59 @@
 #!/usr/bin/env bash
 
-alias gac='git add -A; git commit'
-alias gaf='git add -f'
-alias gap='git add -p'
+alias ga='git add'
+alias gaa='git add --all'
+alias gapa='git add --patch'
+alias gau='git add -update'
+
 alias gb='git branch'
 alias gba='git branch --all'
 alias gbd='git branch --delete'
 alias gbdf='git branch --delete --force'
 alias gbm='git branch --move'
 alias gbu='git branch --unset-upstream'
+
+alias gac='git add -A; git commit'
 alias gc='git commit'
+alias gcn='git commit --no-verify'
+
 alias gcb='git checkout -b'
+alias gco='git checkout'
+
 alias gpr='gh pr create'
+
 alias gd='git diff'
 alias gdw='git diff --word-diff'
 alias gdc='git diff --cached'
 alias gdcw='git diff --cached --word-diff'
+
 alias gcd='cd "$(git rev-parse --show-toplevel)"'
+
 alias gclc='git clean -fd :/'
-alias gcn='git commit --no-verify'
-alias gco='git checkout'
+
 alias gcp='git cherry-pick'
+
 alias gl='git log --graph --full-history --pretty --oneline'
 alias gla='gl -all'
 alias glp='git log -p'
 alias glpd='git log -p --word-diff'
 alias gls='git log --stat --oneline'
+alias gl1="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
+
 alias gpa='git push --all'
 alais gpl='git pull --rebase'
 alias gpf='git push --force-with-lease --quiet'
 alias gpt='git push --tags'
+
 alias gr='git remote'
+alias gau='git remote add upstream'
+
 alias gre='git rebase'
 alias grec='git rebase --continue || git revert --continue'
+
 alias gs='git status --short'
+
 alias gsh'git show'
 alias gshw='git sohw --word-diff'
-alias gl1="git log --graph --pretty='%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
 
 alias amend='git commit --amend --no-verify --allow-empty'
 alias ameno='git commit -ammend --no-verify --allow-empty --no-edit; gpf'
@@ -47,4 +64,3 @@ alias fork='gh repo fork --clone=true'
 
 alias stash='git stash'
 alias pop='git stash pop'
-alias gau='git remote add upstream'

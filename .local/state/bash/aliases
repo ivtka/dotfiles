@@ -18,7 +18,11 @@ else
 fi
 
 # ls
-[[ -x "$(command -v exa)" ]] && alias ls='exa --icons --color-scale'
+if [[ -x "$(command -v exa)" ]]; then
+  alias ls='exa --icons --color-scale'
+  alias tree='ls -lah --level=2 --ignore-glob=".git|node_modules"'
+fi
+
 alias ll='ls -lah'
 alias la='ls -la'
 

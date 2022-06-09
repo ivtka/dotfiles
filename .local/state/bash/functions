@@ -1,6 +1,1 @@
 #!/usr/bin/env bash
-
-function tree() {
-    local level=${1:2}
-    ll --tree --level=$level --ignore-glob=".git|node_modules"
-}
