@@ -9,4 +9,6 @@ if test exa; then
   alias llz='ll --sort=size'
   alias lla='ll --sort=acc'
   alias llc='ll --sort=cr'
+  alias tree='exa -aT --color=always --group-directories-first --icons --ignore-glob=".git|node_modules"'
+  alias l.='exa -a | rg "^\."'
 fi

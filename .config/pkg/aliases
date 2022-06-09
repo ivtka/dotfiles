@@ -3,7 +3,8 @@
 if grep -iq arch /etc/os-release; then
   alias pacman='sudo pacman'
   alias pac='pacman'
-
+  alias pacsyu='pacman -Syyu'
+  
   if test paru; then
     alias install="paru -S --needed --removemake"
     alias show="paru -Si"
@@ -16,5 +17,7 @@ if grep -iq arch /etc/os-release; then
     alias search="pacman -Ss"
     alias remove="pacman -Ss"
     alias fsearch="pacman -F"
+    alias unlock='sudo rm /var/lib/pacman/db.lck'
+    alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
   fi
 fi
