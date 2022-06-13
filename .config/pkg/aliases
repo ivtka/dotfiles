@@ -1,22 +1,20 @@
 #!/usr/bin/env bash
 
-if grep -iq arch /etc/os-release; then
+if grep -iq arch /etc/os-release; then  
   alias pacman='sudo pacman'
   alias pacsyu='pacman -Syyu'
   
   if test paru; then
-    alias install="paru -S --needed --removemake"
+    alias install="paru -Qq | sk --multi --preview 'paru -Si {1}' | xargs -ro paru -S --needed --removemake"
     alias show="paru -Si"
     alias search="paru -Ss"
-    alias remove="paru -Rs"
+    alias remove="paru -Qq | sk --multi --preview 'paru -Qi {1}' | xargs -ro paru -Rs"
     alias fsearch="paru -F"
   else
-    alias pacget="pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S"
-    alias pacrm="pacman -Qq | fzf --multi --preview 'pacman -Qi {1}' | xargs -ro sudo pacman -Rns"
-    alias install="pacman -S --needed --removemake"
+    alias install="pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S --needed --removemake"
+    alias remove="pacman -Qq | fzf --multi --preview 'pacman -Qi {1}' | xargs -ro sudo pacman -Rns"
     alias show="pacman -Si"
     alias search="pacman -Ss"
-    alias remove="pacman -Ss"
     alias fsearch="pacman -F"
     alias unlock='sudo rm /var/lib/pacman/db.lck'
     alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
