@@ -3,3 +3,4 @@
 test helix && alias hx="helix"
 
 alias hxo='hx $(rg --files | sk -m --preview="bat {} --color=always")'
+alias hxe='hx $(sk --ansi -i -c "rg --color=always --line-number {}" | cut -d ":" -f 1,2)'
