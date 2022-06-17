@@ -8,11 +8,15 @@ if grep -iq arch /etc/os-release; then
     alias install="paru -Qq | sk --multi --preview 'paru -Si {1}' | xargs -ro paru -S --needed --removemake"
     alias remove="paru -Qq | sk --multi --preview 'paru -Qi {1}' | xargs -ro paru -Rs"
     alias fsearch="paru -F"
+    alias update="paru -Sy && paru -Qu"
   else
     alias install="pacman -Slq | fzf --multi --preview 'pacman -Si {1}' | xargs -ro sudo pacman -S --needed --removemake"
     alias remove="pacman -Qq | fzf --multi --preview 'pacman -Qi {1}' | xargs -ro sudo pacman -Rns"
     alias fsearch="pacman -F"
     alias unlock='sudo rm /var/lib/pacman/db.lck'
     alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
+    alias update="pacman -Sy && paru -Qu"
   fi
 fi
+
+alias upgrade="topgrade"
