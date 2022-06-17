@@ -122,7 +122,7 @@ alias gra='git remote add'
 alias grup='git remote update'
 alias grmv='git remote rename'
 alias grrm='git remote remove'
-alais grset='git remote set-url'
+alias grset='git remote set-url'
 alias grv='git remote -v'
 
 alias gsi='git submodule init'

@@ -4,6 +4,7 @@
 [[ -f $XDG_CONFIG_HOME/exa/aliases ]] && . $XDG_CONFIG_HOME/exa/aliases
 [[ -f $XDG_CONFIG_HOME/pkg/aliases ]] && . $XDG_CONFIG_HOME/pkg/aliases
 [[ -f $XDG_CONFIG_HOME/nvim/aliases ]] && . $XDG_CONFIG_HOME/nvim/aliases
+[[ -f $XDG_CONFIG_HOME/helix/aliases ]] && . $XDG_CONFIG_HOME/helix/aliases
 
 
 # navigation
