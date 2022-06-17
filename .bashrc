@@ -15,3 +15,5 @@
 
 # Prompt
 PS1='\[\e[34m\]\w\[\e[39m\] \[\e[33m\]ꑭ\[\e[39m\] '
+
+eval "$(starship init bash)"

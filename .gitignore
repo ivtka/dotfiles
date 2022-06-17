@@ -15,7 +15,6 @@
 
 # except for these
 !/.config/bat
-!/.config/fish
 !/.config/gh
 !/.config/git
 !/.config/helix
