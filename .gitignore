@@ -9,6 +9,7 @@
 !/.bash_functions
 !/.bash_completions
 !/.inputrc
+!/.profile
 
 # Unlock .config but ignore all of its contents
 !/.config
