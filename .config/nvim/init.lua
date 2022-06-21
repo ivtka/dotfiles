@@ -1,0 +1,10 @@
+require 'seshotake.plugins'
+require 'seshotake.options'
+require 'seshotake.colors'
+require 'seshotake.autocmds'
+require 'seshotake.statusline'
+require 'seshotake.keymaps'
+
+require 'seshotake.nvim-treesitter'
+require 'seshotake.nvim-cmp'
+require 'seshotake.nvim-lspconfig'
