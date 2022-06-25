@@ -10,10 +10,10 @@ export XDG_CONFIG_HOME="$HOME/.config"
 
 if [ -x "$(command -v hx)" ]; then
   export EDITOR="hx"
-elif [ -x "$(command -v nvim)" ]; then
-  export EDITOR="nvim"
 elif [ -x "$(command -v helix)" ]; then
   export EDITOR="helix"
+elif [ -x "$(command -v nvim)" ]; then
+  export EDITOR="nvim"
 else
   echo "Not installed any editor"
 fi
