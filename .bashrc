@@ -10,10 +10,10 @@ export XDG_CONFIG_HOME="$HOME/.config"
 
 if [ -x "$(command -v hx)" ]; then
   export EDITOR="hx"
-elif [ -x "$(command -v helix)" ]; then
-  export EDITOR="helix"
 elif [ -x "$(command -v nvim)" ]; then
   export EDITOR="nvim"
+elif [ -x "$(command -v helix)" ]; then
+  export EDITOR="helix"
 else
   echo "Not installed any editor"
 fi
@@ -31,3 +31,7 @@ PS1='\[\e[34m\]\w\[\e[39m\] \[\e[33m\]ꑭ\[\e[39m\] '
 
 eval "$(starship init bash)"
 
+
+# fnm
+export PATH=/home/seshotake/.fnm:$PATH
+eval "`fnm env`"
