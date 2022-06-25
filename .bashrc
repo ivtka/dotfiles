@@ -30,8 +30,3 @@ fi
 PS1='\[\e[34m\]\w\[\e[39m\] \[\e[33m\]ꑭ\[\e[39m\] '
 
 eval "$(starship init bash)"
-
-
-# fnm
-export PATH=/home/seshotake/.fnm:$PATH
-eval "`fnm env`"
