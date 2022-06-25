@@ -20,6 +20,7 @@
 !/.config/gh
 !/.config/git
 !/.config/helix
+/.config/helix/runtime
 !/.config/exa
 !/.config/pkg
 !/.config/starship.toml
