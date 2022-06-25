@@ -23,7 +23,6 @@
 !/.config/exa
 !/.config/pkg
 !/.config/starship.toml
-!/.config/nvim
 
 
 # Ignore these
