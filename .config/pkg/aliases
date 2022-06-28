@@ -15,7 +15,7 @@ if grep -iq arch /etc/os-release; then
     alias fsearch="pacman -F"
     alias unlock='sudo rm /var/lib/pacman/db.lck'
     alias cleanup='sudo pacman -Rns $(pacman -Qtdq)'
-    alias update="pacman -Sy && paru -Qu"
+    alias update="pacman -Sy && pacman -Qu"
   fi
 fi
 

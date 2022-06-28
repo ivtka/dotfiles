@@ -20,12 +20,13 @@
 !/.config/gh
 !/.config/git
 !/.config/helix
-/.config/helix/runtime
 !/.config/exa
 !/.config/pkg
+!/.config/fish
 !/.config/starship.toml
 
 
 # Ignore these
 /.config/gh/hosts.yml
 /.config/fish/fish_variables
+/.config/helix/runtime
