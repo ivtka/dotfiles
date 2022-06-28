@@ -136,7 +136,6 @@ alias glola "git log --graph --pretty '%Cred%h%Creset -%C(yellow)%d%Creset %s %C
 alias glog 'git log --oneline --decorate --graph'
 alias gloga 'git log --oneline --decorate --graph --all'
 alias gunwip 'git log -n 1 | grep -q -c "\-\-wip\-\-" && git reset HEAD~1'
-alias glp '__git_log_prettily'
 
 alias gm 'git merge'
 alias gmom 'git merge origin/master'
