@@ -21,3 +21,5 @@ bind yy fish_clipboard_copy
 
 fish_add_path $HOME/.local/bin
 fish_add_path $HOME/.cargo/bin
+
+zoxide init fish | source

@@ -48,3 +48,5 @@
     nevermind = reset --hard HEAD
 [help]
     autocorrect = 30
+[init]
+	defaultBranch = master
