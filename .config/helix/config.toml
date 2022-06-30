@@ -1,4 +1,4 @@
-theme = "noctis_bordo"
+theme = "nord"
 
 [editor]
 line-number = "relative"

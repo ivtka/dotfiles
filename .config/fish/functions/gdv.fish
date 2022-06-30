@@ -1,3 +1,3 @@
 function gdv
-    git diff -w $argv | hx-
+    git diff -w $argv | hx -
 end
