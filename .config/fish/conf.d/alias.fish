@@ -13,7 +13,7 @@ if type -q exa
     alias llsz 'll --sort=size'
     alias llacc 'll --sort=acc'
     alias llcr 'll --sort=cr'
-    alias tree 'exa -aT --color=always --group-directories-first --icons --ignore-glob=".git|node_modules"'
+    alias tree 'exa -aT --color=always --icons --ignore-glob=".git|node_modules"'
     alias l='exa -a | rg "^\."'
 end
 
