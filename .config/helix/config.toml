@@ -1,4 +1,4 @@
-theme = "nord"
+theme = "gruvbox"
 
 [editor]
 line-number = "relative"
@@ -11,3 +11,6 @@ display-messages = true
 insert = "bar"
 normal = "block"
 select = "underline"
+
+[editor.indent-guides]
+render = true
