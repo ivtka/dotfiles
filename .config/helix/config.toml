@@ -1,7 +1,7 @@
 theme = "gruvbox"
 
 [editor]
-line-number = "relative"
+line-number = "absolute"
 mouse = false
 
 [editor.lsp]
@@ -14,3 +14,8 @@ select = "underline"
 
 [editor.indent-guides]
 render = true
+
+[editor.whitespace.render]
+space = "all"
+tab = "all"
+newline = "none"
