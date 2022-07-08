@@ -3,6 +3,7 @@ theme = "gruvbox"
 [editor]
 line-number = "absolute"
 mouse = false
+color-modes = true
 
 [editor.lsp]
 display-messages = true
@@ -19,3 +20,4 @@ render = true
 space = "all"
 tab = "all"
 newline = "none"
+
