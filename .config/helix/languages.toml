@@ -2,7 +2,10 @@
 name = "typescript"
 language-server = { command = "deno", args = ["lsp"] }
 roots = ["deno.json"]
-config = { enable = true, unstable = false }
+
+[language.config]
+enable = true
+unstable = false
 
 [[language]]
 name = "git-commit"
