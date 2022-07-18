@@ -21,3 +21,6 @@ space = "all"
 tab = "all"
 newline = "none"
 
+[editor.statusline]
+left = ["mode", "spinner"]
+center = ["file-type", "file-name"]
