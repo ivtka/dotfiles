@@ -22,5 +22,5 @@ tab = "all"
 newline = "none"
 
 [editor.statusline]
-left = ["mode", "spinner"]
-center = ["file-type", "file-name"]
+left = ["mode", "file-name"]
+right = ["diagnostics", "spinner", "file-type", "selections", "position"]

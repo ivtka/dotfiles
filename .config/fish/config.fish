@@ -1,7 +1,7 @@
 # Define environmnet variables
 
-superset EDITOR hx
-superset VISUAL hx
+superset EDITOR nvim
+superset VISUAL nvim
 superset MANPAGER 'nvim +Man!'
 
 superset XDG_CONFIG_HOME $HOME/.config
