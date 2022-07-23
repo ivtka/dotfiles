@@ -24,6 +24,7 @@
 !/.config/pkg
 !/.config/fish
 !/.config/starship.toml
+!/.config/nvchad
 
 
 # Ignore these
